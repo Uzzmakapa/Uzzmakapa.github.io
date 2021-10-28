@@ -1,0 +1,104 @@
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FFFBFC;
+}
+
+a {
+	color: #FFFBFC;
+}
+
+body {
+    background-color: #FFFBFC;
+}
+
+#navbar {
+    background-color: #010400;
+    color: #FFFBFC;
+}
+
+.button {
+    background-color: #0D6EFD;
+    border: none;
+    color: #FFFBFC;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+#signup {
+    border: 1px solid #010400;
+    background-color: #010400;
+    border-radius: 10px;
+    height: 102%;
+    width: 50%;
+    padding-top: 15px;
+    margin: 50px 27%; 
+    color: #FFFBFC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+#signupform {
+    border: 1px solid #FFFBFC;
+    background-color: #FFFBFC;
+    border-radius: 10px;
+    padding-top: 15px;
+    height: 100%;
+    color: #010400;
+    overflow-y: auto;
+}
+
+input[type=text], input[type=password], input[type=email]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: #010400;
+  color: #FFFBFC;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity:0.8;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}

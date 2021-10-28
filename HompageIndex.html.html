@@ -1,0 +1,755 @@
+<html>
+    <head>
+        <title>EZhop</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="homepage.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="homepage.js"></script>
+    </head>
+
+    <body onload="cpuonlyload()">
+        <div class="container-fluid" style="height: 100px;" id="navbar">
+            <div class="row" style="padding-top: 10px; padding-left: 50px;">
+                <div class="col-md-4" style="padding-top: 13px;">
+                    <h1>EZhop</h1>
+                </div>
+                <div class="col-md-4" style="padding-top: 13px; padding-left: 100px;">
+                    <div class="pill-nav">
+                        <a href="homepage.html">Home</a>
+                        <a onclick="components()" style="cursor: pointer;">Components</a>
+                    </div>
+                </div>
+                <div class="col-md-4" style="text-align: right; padding-top: 15px; padding-right: 50px;">
+                    <button class="button" onclick="location.href='login.html'">Log In</button>
+                    <button class="button" onclick="location.href='signup.html'" style="background-color: green;">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="components">
+            <div class="pill-nav" style="padding-left: 215px;">
+                <a onclick="cpu()">CPU</a>
+                <a onclick="cooler()">Cooler</a>
+                <a onclick="motherboard()">Motherboard</a>
+                <a onclick="gpu()">Graphics Card</a>
+                <a onclick="ram()">RAM</a>
+                <a onclick="hdd()">Hard disk drive</a>
+                <a onclick="ssd()">Solid state drive</a>
+            </div>
+
+            <div class="container" id="items">
+
+                <div class="container-fluid" id="CPU">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="Images/CPU/r5.jpg" alt="r5" style="width:100%">
+                                <h3>AMD Ryzen 5 3600</h3>
+                                <p class="price">$229.99</p>
+                                <p>6-Core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler</p>
+                                <p>
+                                   <button type="button" data-bs-toggle="modal" data-bs-target="#r5">More Info</button>
+                                   <button style="position: inherit; float: right; margin-top: 25px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="r5" tabindex="-1" aria-labelledby="r5" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="r5">AMD Ryzen 5 3600</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b>General Specifications</b> <br><br>
+
+                                                    Platform: Boxed Processor <br>
+                                                    Product Family: AMD Ryzen™ Processors <br>
+                                                    Product Line: AMD Ryzen™ 5 Desktop Processors <br>
+                                                    # of CPU Cores: 6 <br>
+                                                    # of Threads: 12 <br>
+                                                    Max. Boost Clock: Up to 4.2GHz <br>
+                                                    Base Clock: 3.6GHz <br>
+                                                    Total L1 Cache: 384KB <br>
+                                                    Total L2 Cache: 3MB <br>
+                                                    Total L3 Cache: 32MB <br>
+                                                    Default TDP: 65W <br>
+                                                    Processor Technology for CPU Cores: TSMC 7nm FinFET <br>
+                                                    Unlocked for Overclocking: Yes <br>
+                                                    CPU Socket: AM4 <br>
+                                                    Thermal Solution (PIB): Wraith Stealth <br>
+                                                    Thermal Solution (MPK): Wraith Stealth <br>
+                                                    Max. Operating Temperature (Tjmax): 95°C <br>
+                                                    Launch Date: 7/7/2019 <br>
+                                                    *OS Support: <br>
+                                                    &ensp; Windows 11 - 64-Bit Edition <br>
+                                                    &ensp; Windows 10 - 64-Bit Edition <br>
+                                                    &ensp; RHEL x86 64-Bit <br>
+                                                    &ensp; Ubuntu x86 64-Bit <br> 
+                                                    &ensp; *Operating System (OS) support will vary by manufacturer. <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="Images/CPU/r7.jpg" alt="r7" style="width:100%">
+                                <h3>AMD Ryzen 7 5800x</h3>
+                                <p class="price">$393.99</p>
+                                <p>8-core, 16-Thread Unlocked Desktop Processor</p>
+                                <p>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#r7">More Info</button>
+                                    <button style="position: inherit; float: right; margin-top: 25px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="r7" tabindex="-1" aria-labelledby="r7" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="r7">AMD Ryzen 7 5800x</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b>General Specifications</b> <br><br>
+
+                                                    Platform: Boxed Processor <br>
+                                                    Product Family: AMD Ryzen™ Processors <br>
+                                                    Product Line: AMD Ryzen™ 7 Desktop Processors <br>
+                                                    # of CPU Cores: 8 <br>
+                                                    # of Threads: 16 <br>
+                                                    Max. Boost Clock: Up to 4.7GHz <br>
+                                                    Base Clock: 3.8GHz <br>
+                                                    Total L2 Cache: 4MB <br>
+                                                    Total L3 Cache: 32MB <br>
+                                                    Default TDP: 105W <br>
+                                                    Processor Technology for CPU Cores: TSMC 7nm FinFET <br>
+                                                    Unlocked for Overclocking: Yes <br>
+                                                    CPU Socket: AM4 <br> 
+                                                    Thermal Solution (PIB): Not included <br> 
+                                                    Max. Operating Temperature (Tjmax): 90°C <br>
+                                                    Launch Date: 11/5/2020 <br>
+                                                    *OS Support <br>
+                                                    &ensp; Windows 10 - 64-Bit Edition <br>
+                                                    &ensp; RHEL x86 64-Bit <br>
+                                                    &ensp; Ubuntu x86 64-Bit <br>
+                                                    &ensp; *Operating System (OS) support will vary by manufacturer. <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="Images/CPU/i5.png" alt="i5" style="width:50%; margin: 10px 75px;">
+                                <h3>Intel Core i5-10400</h3>
+                                <p class="price">$184.99</p>
+                                <p>Desktop Processor 6 Cores up to 4.3 GHz LGA1200 65W</p>
+                                <p>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#i5">More Info</button>
+                                    <button style="position: inherit; float: right; margin-top: 24px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="i5" tabindex="-1" aria-labelledby="i5" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="i5">Intel Core i5-10400</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b> General Specifications </b> <br><br>
+
+                                                    Product Collection: 10th Generation Intel® Core™ i5 Processors <br>
+                                                    Code Name: Products formerly Comet Lake <br>
+                                                    Vertical Segment: Desktop <br>
+                                                    Processor Number: i5-10400 <br>
+                                                    Status: Launched <br>
+                                                    Launch Date: Q2'20 <br>
+                                                    Lithography: 14 nm <br>
+                                                    Use Conditions: PC/Client/Tablet <br>
+                                                    Recommended Customer Price: $182.00 <br><br>
+
+                                                    <b> CPU Specifications </b> <br><br>
+
+                                                    Total Cores: 6 <br>
+                                                    Total Threads: 12 <br>
+                                                    Max Turbo Frequency: 4.30 GHz <br>
+                                                    Intel® Turbo Boost Technology 2.0 Frequency‡: 4.30 GHz <br>
+                                                    Processor Base Frequency: 2.90 GHz <br>
+                                                    Cache: 12 MB Intel® Smart Cache <br>
+                                                    Bus Speed: 8 GT/s <br>
+                                                    TDP: 65 W <br>
+                                                    Supplemental Information Embedded Options Available: No <br>
+                                                    Datasheet: View now <br><br>
+
+                                                    <b>Memory Specifications</b> <br><br>
+
+                                                    Max Memory Size (dependent on memory type): 128 GB <br>
+                                                    Memory Types: DDR4-2666 <br>
+                                                    Max # of Memory Channels: 2 <br>
+                                                    Max Memory Bandwidth: 41.6 GB/s <br>
+                                                    ECC Memory Supported ‡: No <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="Images/CPU/i7.png" alt="i7" style="width:75%; margin: 10px 40px;">
+                                <h3>Intel Core i7-7700K</h3>
+                                <p class="price">$298.42</p>
+                                <p>Desktop Processor 4 Cores up to 4.5 GHz Unlocked LGA 1151 91W</p>
+                                <p>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#i7">More Info</button>
+                                    <button style="position: inherit; float: right; margin-top: -10px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="i7" tabindex="-1" aria-labelledby="i7" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="i7">Intel Core i7-7700K</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b> General Specifications </b> <br><br>
+
+                                                    Product Collection: 7th Generation Intel® Core™ i7 Processors <br>
+                                                    Code Name: Products formerly Kaby Lake <br>
+                                                    Vertical Segment: Desktop <br>
+                                                    Processor Number: i7-7700K <br>
+                                                    Status: Discontinued <br>
+                                                    Launch Date: Q1'17 <br>
+                                                    Lithography: 14 nm <br>
+                                                    Included Items: Please note: The boxed product does not include a fan or heat sink <br><br>
+
+                                                    <b> CPU Specifications </b> <br><br>
+
+                                                    Total Cores: 4 <br>
+                                                    Total Threads: 8 <br>
+                                                    Max Turbo Frequency: 4.50 GHz <br>
+                                                    Intel® Turbo Boost Technology 2.0 Frequency‡: 4.50 GHz <br>
+                                                    Processor Base Frequency: 4.20 GHz <br>
+                                                    Cache: 8 MB Intel® Smart Cache <br>
+                                                    Bus Speed: 8 GT/s <br>
+                                                    # of QPI Links: 0 <br>
+                                                    TDP: 91 W <br><br>
+
+                                                    <b> Supplemental Information </b> <br><br>
+
+                                                    Embedded Options Available: No <br>
+                                                    DatasheetView: now <br><br>
+
+                                                    <b> Memory Specifications </b> <br><br>
+
+                                                    Max Memory Size (dependent on memory type): 64 GB <br>
+                                                    Memory Types: DDR4-2133/2400, DDR3L-1333/1600 @ 1.35V <br>
+                                                    Max # of Memory Channels: 2 <br>
+                                                    ECC Memory Supported ‡: No <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" id="Cooler">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card" style="height: 450px;">
+                                <img src="Images/Cooler/cooler1.png" alt="cooler1" style="width:60%; margin: 10px 60px;">
+                                <h3>MasterAir MA612 Stealth</h3>
+                                <p class="price">$116.11</p>
+                                <p>Stealth Black Hardware Dual SickleFlow 120 Fan Quiet Operation</p>
+                                <p>
+                                   <button type="button" data-bs-toggle="modal" data-bs-target="#cooler1">More Info</button>
+                                   <button style="position: inherit; float: right; margin-top: 11px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="cooler1" tabindex="-1" aria-labelledby="cooler1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="cooler1">MASTERAIR MA612 STEALTH</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b> General Specifications </b> <br><br>
+
+                                                    PRODUCT NUMBER: MAP-T6PS-218PK-R1 <br>
+                                                    EXTERIOR COLOR: Black <br>
+                                                    CPU SOCKET: LGA2066, LGA2011-v3, LGA2011, LGA1700*, LGA1200, LGA1366, LGA1156, LGA1155, LGA1151, LGA1150, AM4, AM3+, AM3, AM2+, AM2, FM2+, FM2, FM1 <br>
+                                                    DIMENSIONS (L X W X H): 129 x 112.2 x 158 mm / 5 x 4.4 x 6.2 inch <br>
+                                                    HEAT SINK MATERIAL: 6 Heat Pipes, Aluminum Fins <br>
+                                                    FAN DIMENSIONS (L X W X H): 120 x 120 x 25 mm / 4.7 x 4.7 x 1 inch <br>
+                                                    FAN QUANTITY: 2 PCS <br>
+                                                    FAN SPEED: 650-1800 RPM ± 5% <br>
+                                                    FAN AIRFLOW: 62 CFM (Max) <br>
+                                                    FAN NOISE LEVEL: 8 - 27 dBA <br>
+                                                    FAN AIR PRESSURE: 2.5 mmH2O (Max) <br>
+                                                    FAN MTTF: 160,000 Hours <br>
+                                                    FAN POWER CONNECTOR: 4-Pin (PWM) <br>
+                                                    FAN RATED VOLTAGE:"12VDC <br>
+                                                    FAN RATED CURRENT: 0.15A <br>
+                                                    FAN SAFETY CURRENT: 0.37A <br>
+                                                    FAN POWER CONSUMPTION: 1.8W <br>
+                                                    WARRANTY: 5 years <br>
+                                                    SERIES: MasterAir <br>
+                                                    COOLER TYPE: Air Cooler <br>
+                                                    HEATPIPES: 6 <br>
+                                                    NOTE: *LGA1700 mounting kit included since 11/2021, mounting kit required (Free) for products purchased before this date. <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style="height: 450px;">
+                                <img src="Images/Cooler/cooler2.png" alt="cooler2" style="width: 70%; margin: 10px 50px;">
+                                <h3>Noctua NH-D15</h3>
+                                <p class="price">$99.95</p>
+                                <p>6 heatpipe dual tower design. 2x NF-A15 140mm fan with PWM</p>
+                                <p>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#cooler2">More Info</button>
+                                    <button style="position: inherit; float: right; margin-top: 29px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="cooler2" tabindex="-1" aria-labelledby="cooler2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="cooler2">Noctua NH-D15</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b> General Specifications </b> <br><br>
+
+                                                    <b> Cooler Specification </b> <br><br>
+
+                                                    Socket compatibility: Intel LGA2066, LGA2011-0 & LGA2011-3 (Square ILM), LGA1200, LGA1156, LGA1155, LGA1151, LGA1150 & AMD AM2, AM2+, AM3, AM3+, FM1, FM2, FM2+ (backplate required), AM4 (included since 2019, older coolers require NM-AM4) <br>
+                                                    Height (without fan): 160 mm <br>
+                                                    Width (without fan): 150 mm <br>
+                                                    Depth (without fan): 135 mm <br>
+                                                    Weight (without fan): 1000 g <br>
+                                                    Height (with fan): 165 mm <br>
+                                                    Width (with fan): 150 mm <br>
+                                                    Depth (with fan): 161 mm <br>
+                                                    Weight (with fan): 1320 g <br>
+                                                    Material: Copper (base and heat-pipes), aluminium (cooling fins), soldered joints & nickel plating <br>
+                                                    NSPR: 183 <br>
+                                                    Fan compatibility: 140x150x25 (with 120mm mounting holes), 140x140x25 (with 120mm mounting holes), 120x120x25 <br><br>
+
+                                                    <b> FAN Specification </b> <br><br>
+
+                                                    Model: 2x Noctua NF-A15 PWM <br>
+                                                    Bearing: SSO2 <br>
+                                                    Max. rotational speed (+/- 10%): 1500 RPM <br>
+                                                    Max. rotational speed with L.N.A. (+/- 10%): 1200 RPM <br>
+                                                    Min. rotational speed (PWM, +/-20%): 300 RPM <br>
+                                                    Max. airflow: 140,2 m³/h <br>
+                                                    Max. airflow with L.N.A.: 115,5 m³/h <br>
+                                                    Max. acoustical noise: 24,6 dB(A) <br>
+                                                    Max. acoustical noise with L.N.A.: 19,2 dB(A) <br>
+                                                    Voltage range: 12 V <br>
+                                                    MTTF: > 150.000 h <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" id="Motherboard">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card" style="height: 450px;">
+                                <img src="Images/Motherboard/mb1.png" alt="mb1" style="width:60%; margin: 10px 60px;">
+                                <h3>MSI X470 GAMING PLUS MAX</h3>
+                                <p class="price">$94.00</p>
+                                <p>Satisfying gamers with what they really need, X470 GAMING PLUS MAX is equipped with Core boost, Turbo M.2, Audio Boost, USB 3.2 Gen2</p>
+                                <p>
+                                   <button type="button" data-bs-toggle="modal" data-bs-target="#mb1">More Info</button>
+                                   <button style="position: inherit; float: right; margin-top: 25px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="mb1" tabindex="-1" aria-labelledby="mb1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="mb1">MSI X470 GAMING PLUS MAX</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b>General Specification</b> <br><br>
+
+                                                    Brand: MSI <br>
+                                                    CPU Socket: Socket AM4 <br>
+                                                    RAM Memory Technology: DDR4 <br>
+                                                    Compatible Processors: AMD 3rd Generation Ryzen, AMD 2nd Gerenration Ryzen, AMD Athlon <br>
+                                                    Chipset Type: AMD X470 <br>
+                                                    Memory Speed: 2133 MHz <br>
+                                                    Platform: Windows 10 <br>
+                                                    Series: X470GPLMAX <br>
+                                                    Memory Storage Capacity: 64 GB <br>
+                                                    RAM Memory Maximum Size: 64 GB <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style="height: 450px;">
+                                <img src="Images/Motherboard/mb2.png" alt="mb2" style="width: 70%; margin: 10px 50px;">
+                                <h3>ASUS TUF Gaming B560M-PLUS</h3>
+                                <p class="price">$149.99</p>
+                                <p>WiFi LGA1200 Micro ATX Gaming Motherboard </p>
+                                <p>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#mb2">More Info</button>
+                                    <button style="position: inherit; float: right; margin-top: 52px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="mb2" tabindex="-1" aria-labelledby="mb2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content" style="width: 350px">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="mb2">ASUS TUF Gaming B560M-PLUS</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b>General Specification</b> <br><br>
+
+                                                    Brand: ASUS <br>
+                                                    CPU Socket: LGA 1200 <br>
+                                                    RAM Memory Technology: DDR4 <br>
+                                                    Memory Speed: 5000 MHz <br>
+                                                    Platform: Windows <br>
+                                                    Series: TUF GAMING B560M-PLUS WIFI <br>
+                                                    Memory Storage Capacity: 128 GB <br>
+                                                    Graphics Card Interface: PCI-E <br>
+                                                    Memory Slots Available: 4 <br>
+                                                    Wireless Type: 802.11a/b/g/n/ac, 802.11ax <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" id="Graphics-card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card" style="height: 450px;">
+                                <img src="Images/GPU/gpu1.png" alt="gpu1" style="width:60%; margin: 10px 60px;">
+                                <h3>ZOTAC Gaming GeForce GTX 1660 Super</h3>
+                                <p class="price">$539.99</p>
+                                <p>6GB GDDR6 192-bit Gaming Graphics Card, Super Compact, ZT-T16620F-10L</p>
+                                <p>
+                                   <button type="button" data-bs-toggle="modal" data-bs-target="#gpu1">More Info</button>
+                                   <button style="position: inherit; float: right; margin-top: 31px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="gpu1" tabindex="-1" aria-labelledby="gpu1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content" style="width: 400px">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="gpu1">ZOTAC Gaming GeForce GTX 1660 Super</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b>General Specification</b> <br><br>
+
+                                                    Brand: ZOTAC <br>
+                                                    Graphics Coprocessor: NVIDIA GeForce GTX 1660 <br>
+                                                    Video Output Interface: DisplayPort, HDMI <br>
+                                                    Chipset Brand: NVIDIA <br>
+                                                    Graphics RAM Type: GDDR6 <br>
+                                                    Memory size: 6GB <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style="height: 450px;">
+                                <img src="Images/GPU/gpu2.png" alt="gpu2" style="width: 55%; margin: 10px 75px;">
+                                <h3>ASUS TUF Gaming RTX 3060 OC Edition</h3>
+                                <p class="price">$993.51</p>
+                                <p>PCIe 4.0, 12GB GDDR6, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II</p>
+                                <p>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#gpu2">More Info</button>
+                                    <button style="position: inherit; float: right; margin-top: 1px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="gpu2" tabindex="-1" aria-labelledby="gpu2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content" style="width: 400px">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="gpu2">ASUS TUF Gaming NVIDIA GeForce RTX 3060 OC Edition</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b>General Specification</b> <br><br>
+
+                                                    Brand: ASUS <br>
+                                                    Graphics Coprocessor: NVIDIA GeForce RTX 2070 <br>
+                                                    Video Output Interface: DisplayPort, HDMI <br>
+                                                    Chipset Brand: NVIDIA <br>
+                                                    Graphics RAM Type: GDDR6 <br>
+                                                    Memory Size: 12GB <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" id="RAM">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card" style="height: 450px;">
+                                <img src="Images/RAM/ram1.png" alt="ram1" style="width:60%; margin: 10px 60px;">
+                                <h3>OLOy DDR4 RAM 16GB (2x8GB)</h3>
+                                <p class="price">$59.99</p>
+                                <p>3200 MHz CL16 1.35V 288-Pin Desktop Gaming UDIMM</p>
+                                <p>
+                                   <button type="button" data-bs-toggle="modal" data-bs-target="#ram1">More Info</button>
+                                   <button style="position: inherit; float: right; margin-top: 14px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="ram1" tabindex="-1" aria-labelledby="ram1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content" style="width: 340px">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ram1">OLOy DDR4 RAM 16GB</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b>General Specification</b> <br><br>
+
+                                                    Brand: OLOy <br>
+                                                    Form Factor: 288-Pin <br>
+                                                    RAM Memory Technology: SDRAM DDR4 <br>
+                                                    Computer Memory Size: 16 GB <br>
+                                                    Memory Speed: 3200 MHz <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style="height: 450px;">
+                                <img src="Images/RAM/ram2.png" alt="ram2" style="width: 55%; margin: 50px 75px;">
+                                <h3>Corsair Vengeance LPX 16GB (2x8GB)</h3>
+                                <p class="price">$75.99</p>
+                                <p>DDR4 DRAM 3200MHz C16 Desktop Memory Kit - Black</p>
+                                <p>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#ram2">More Info</button>
+                                    <button style="position: inherit; float: right; margin-top: 49px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="ram2" tabindex="-1" aria-labelledby="ram2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content" style="width: 350px">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ram2">Corsair Vengeance LPX 16GB</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b>General Specification</b> <br><br>
+
+                                                    Brand: Corsair <br>
+                                                    Form Factor: DIMM <br>
+                                                    RAM Memory Technology: DDR4_SDRAM <br>
+                                                    Computer Memory Size: 16 GB <br>
+                                                    Memory Speed: 2666 MHz <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" id="HDD">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card" style="height: 450px;">
+                                <img src="Images/HDD/hdd1.png" alt="hdd1" style="width:40%; margin: 10px 90px;">
+                                <h3>Seagate BarraCuda 2TB HDD</h3>
+                                <p class="price">$46.99</p>
+                                <p>3.5 Inch SATA 6Gb/s 7200 RPM 256MB Cache 3.5-Inch</p>
+                                <p>
+                                   <button type="button" data-bs-toggle="modal" data-bs-target="#hdd1">More Info</button>
+                                   <button style="position: inherit; float: right; margin-top: 16px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="hdd1" tabindex="-1" aria-labelledby="hdd1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content" style="width: 380px">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="hdd1">Seagate BarraCuda 2TB</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b>General Specification</b> <br><br>
+
+                                                    Digital Storage Capacity: 2 TB <br>
+                                                    Compatible Devices: Server, Storage System <br>
+                                                    Hard Disk Interface: Serial ATA <br>
+                                                    Brand: Seagate <br>
+                                                    Series: BarraCuda <br>
+                                                    Specific Uses For Product: Business, personal <br>
+                                                    Connectivity Technology: SATA <br>
+                                                    Hard Disk Form Factor: 3.5 Inches <br>
+                                                    Hard Disk Size: 2 TB <br>
+                                                    Form Factor: 3.5-Inch <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style="height: 450px;">
+                                <img src="Images/HDD/hdd2.png" alt="hdd2" style="width: 40%; margin: 0px 90px;">
+                                <h3>Western Digital 2TB HDD</h3>
+                                <p class="price">$46.99</p>
+                                <p>7200 RPM Class, SATA 6 Gb/s, 256 MB Cache, 3.5"</p>
+                                <p>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#hdd2">More Info</button>
+                                    <button style="position: inherit; float: right; margin-top: 26px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="hdd2" tabindex="-1" aria-labelledby="hdd2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content" style="width: 400px">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="hdd2">Western Digital 2TB HDD</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b>General Specification</b> <br><br>
+
+                                                    Digital Storage Capacity: 2 TB <br>
+                                                    Compatible Devices: Desktop <br>
+                                                    Hard Disk Interface: Serial ATA-600 <br>
+                                                    Brand: Western Digital <br>
+                                                    Series: WD Blue PC Hard Drive <br>
+                                                    Specific Uses For Product: Personal, Business <br>
+                                                    Connectivity Technology: SATA <br>
+                                                    Hard Disk Form Factor: 3.5 Inches <br>
+                                                    Hard Disk Size: 2 TB <br>
+                                                    Form Factor:"3.5-inch <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" id="SSD">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card" style="height: 450px;">
+                                <img src="Images/SSD/ssd1.png" alt="ssd1" style="width:60%; margin: 10px 65px;">
+                                <h3>Samsung 870 QVO 2TB</h3>
+                                <p class="price">$179.99</p>
+                                <p>The 870 QVO is Samsung’s latest 2nd generation QLC SSD with up to 8TB of storage capacity</p>
+                                <p>
+                                   <button type="button" data-bs-toggle="modal" data-bs-target="#ssd1">More Info</button>
+                                   <button style="position: inherit; float: right; margin-top: 41px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="ssd1" tabindex="-1" aria-labelledby="ssd1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content" style="width: 360px">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ssd1">Samsung 870 QVO 2TB</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b>General Specification</b> <br><br>
+
+                                                    Digital Storage Capacity: 2 TB <br>
+                                                    Compatible Devices: Laptop, Desktop <br>
+                                                    Brand: Samsung Electronics <br>
+                                                    Series: 870 QVO-Series <br>
+                                                    Connectivity Technology: SATA <br>
+                                                    Hard Disk Form Factor: 2.5 Inches <br>
+                                                    Form Factor: 2.5 inches <br>
+                                                    Read Speed: 560 Megabytes Per Second <br>
+                                                    Cache Size: 1 <br>
+                                                    Hard Disk Description: Solid State Hard Drive <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" style="height: 450px;">
+                                <img src="Images/SSD/ssd2.png" alt="ssd2" style="width: 60%; margin: 10px 70px;">
+                                <h3>Kingston 240GB A400 SSD</h3>
+                                <p class="price">$27.99</p>
+                                <p>Fast start up, loading and file transfers SATA 3 2.5" Internal SSD</p>
+                                <p>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#ssd2">More Info</button>
+                                    <button style="position: inherit; float: right; margin-top: 65px;" onclick="location.href='login.html'">Add to Cart</button>
+                                </p>
+                                <div class="modal fade" id="ssd2" tabindex="-1" aria-labelledby="ssd2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content" style="width: 550px">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="ssd2">Kingston 240GB A400 SSD</h5>
+                                                </div>
+                                                <div class="modal-body" style="text-align: left;">
+                                                    <b>General Specification</b> <br><br>
+
+                                                    Digital Storage Capacity: 240 GB <br>
+                                                    Compatible Devices: Backwards compatibility to SATA Rev. 2.0 (3Gb/s) <br>
+                                                    Hard Disk Interface: Serial ATA <br>
+                                                    Brand: Kingston <br>
+                                                    Series: A400 Series <br>
+                                                    Specific Uses For Product: Business, personal <br>
+                                                    Connectivity Technology: SATA <br>
+                                                    Hard Disk Form Factor: 2.5 Inches <br>
+                                                    Hard Disk Size: 240 GB <br>
+                                                    Form Factor: 2.5-inch <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

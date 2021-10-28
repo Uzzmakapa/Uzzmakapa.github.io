@@ -1,0 +1,86 @@
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FFFBFC;
+}
+
+a {
+	color: #FFFBFC;
+}
+
+body {
+    background-color: #FFFBFC;
+}
+
+#navbar {
+    background-color: #010400;
+    color: #FFFBFC;
+}
+
+.button {
+    background-color: #0D6EFD;
+    border: none;
+    color: #FFFBFC;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+#login {
+    border: 1px solid #010400;
+    background-color: #010400;
+    border-radius: 10px;
+    height: 50%;
+    width: 25%;
+    padding-top: 15px;
+    margin: 125px 39%; 
+    color: #FFFBFC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+#loginform {
+    border: 1px solid #FFFBFC;
+    background-color: #FFFBFC;
+    border-radius: 10px;
+    padding-top: 15px;
+    height: 96.5%;
+    color: #010400;
+    overflow-y: auto;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+button {
+  background-color: #010400;
+  color: #FFFBFC;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
